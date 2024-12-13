@@ -49,7 +49,7 @@ function setLanguage(language) {
     }
 }
 
-setLanguage('xml');
+setLanguage('javascript');
 
 // 自动显示代码提示
 let timeoutId;
