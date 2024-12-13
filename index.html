@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <!-- 引入 CodeMirror 核心样式 -->
+    <link rel="stylesheet" href="script&style/codemirror.min.css">
+
+    <!-- 引入特定语言的语法高亮样式 -->
+    <link rel="stylesheet" href="script&style/dracula.min.css">
+
+    <!-- 引入 CodeMirror 核心脚本 -->
+    <script src="script&style/codemirror.min.js"></script>
+
+    <!-- 引入 XML 语言模式 -->
+    <script src="script&style/xml.min.js"></script>
+
+    <!-- 引入 HTML 语言模式 -->
+    <script src="script&style/htmlmixed.min.js"></script>
+
+    <!-- 引入 JavaScript 语言模式 -->
+    <script src="script&style/javascript.min.js"></script>
+
+    <!-- 引入 Lua 语言模式 -->
+    <script src="script&style/lua.min.js"></script>
+
+    <!-- 引入括号匹配插件 -->
+    <script src="script&style/matchbrackets.min.js"></script>
+
+    <!-- 引入行号显示插件 -->
+    <script src="script&style/line-numbers.min.js"></script>
+    <!-- 引入 show-hint 插件 -->
+    <script src="script&style/show-hint.min.js"></script>
+    <link rel="stylesheet" href="script&style/show-hint.css">
+
+    <!-- 引入 anyword-hint 插件（用于简单的单词提示） -->
+    <script src="script&style/anyword-hint.min.js"></script>
+
+    <!-- 引入 JavaScript 提示插件 -->
+    <script src="script&style/javascript-hint.min.js"></script>
+
+    <!-- 引入 XML 提示插件 -->
+    <script src="script&style/xml-hint.min.js"></script>
+
+    <!-- 引入 HTML 提示插件 -->
+    <script src="script&style/html-hint.min.js"></script>
+
+    <!-- 引入 Lua 提示插件，暂无-->
+    <!-- <script src="lua-hint.js"></script> -->
+    <link  rel="stylesheet" type="text/css" href="app/app.css">
+</head>
+
+<body>
+    <div class="editor-container">
+        <textarea id="code-editor" style="height: 100%;"></textarea>
+    </div>
+    <div class="input_box" id="input_box">
+        <div class="input_head">输出</div>
+        <button class="input_button" onclick="input_box()">^</button>
+        <p id = "input_text"></p>
+    </div>
+
+    <script src="app/app.js"></script>
+</body>
+
+</html>
