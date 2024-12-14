@@ -66,7 +66,7 @@ function maybeShowHint() {
             // 如果光标位于一个有效的 token 之后，显示提示
             CodeMirror.showHint(editor, editor.getOption('hintOptions').hint);
         }
-    }, 500); // 延迟 300 毫秒以避免频繁触发
+    }, 500); // 延迟 500 毫秒以避免频繁触发
 }
 
 // 监听光标活动事件
