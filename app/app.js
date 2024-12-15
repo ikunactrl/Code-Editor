@@ -87,3 +87,6 @@ function setinputtext(text) {
 function setpretext(text) {
     editor.setValue(text)
 }
+function getcode() {
+    return editor.getValue()
+}
