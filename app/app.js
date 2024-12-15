@@ -72,7 +72,7 @@ function maybeShowHint() {
 // 监听光标活动事件
 editor.on('cursorActivity', maybeShowHint);
 
-function input_box(){
+function input_box() {
     if (document.getElementById("input_box").style.bottom != "-27%") {
         document.getElementById("input_box").style.bottom = "-27%"
     } else {
@@ -90,3 +90,11 @@ function setpretext(text) {
 function getcode() {
     return editor.getValue()
 }
+let inclient = false
+//对无法取值的调用方增加回调事件
+editor.on('inputRead', function (cm, changeObj) {
+    var text = editor.getValue();
+    if (inclient == true) {
+        setcodeinclient(text)
+    }
+});
