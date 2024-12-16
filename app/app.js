@@ -75,13 +75,15 @@ editor.on('cursorActivity', maybeShowHint);
 function input_box() {
     if (document.getElementById("input_box").style.bottom != "-27%") {
         document.getElementById("input_box").style.bottom = "-27%"
+        document.getElementById("input").style.bottom = "-27%"
     } else {
         document.getElementById("input_box").style.bottom = "0"
+        document.getElementById("input").style.bottom = "0"
     }
 }
 
 function setinputtext(text) {
-    document.getElementById("input_text").innerText = text
+    document.getElementById("input").value = text
 }
 
 function setpretext(text) {
