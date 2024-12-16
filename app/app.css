@@ -48,6 +48,7 @@ body {
 /*-----------------------------*/
 
 .input_box {
+    color: white;
     background-color: #1d1d1d;
     position: fixed;
     height: 30%;
